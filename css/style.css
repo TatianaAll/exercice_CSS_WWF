@@ -1,0 +1,221 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* the fonts */
+a,
+h1,
+h2,
+p,
+button,
+li {
+  font-family: "Roboto Condensed", sans-serif;
+}
+section {
+  padding: 2rem 0;
+}
+
+/* Header */
+h1 {
+  text-align: center;
+  color: white;
+  margin-bottom: 1rem;
+}
+header {
+  height: 100vh;
+  background-image: url(../imgWWF/tigre.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+/* navBar */
+header > nav > ul {
+  align-items: center;
+  justify-content: left;
+  list-style: none;
+}
+
+/* taille des éléments et resize du logo */
+header > nav > ul > li {
+  width: 15%;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* le changement de couleur au passage */
+header > nav > ul > li:hover {
+  color: #2e282a;
+}
+header > nav > ul > li:first-child {
+  margin-right: auto;
+}
+header{
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/*  l'article de fin de header*/
+/* on met l'article en bas du relative */
+header > article {
+  justify-content: right;
+}
+/* on change la couleur du txt et on le colle à droite */
+header > article > div {
+  color: white;
+}
+/* change le padding du texte de l'article */
+header > article > div > p{
+  padding: 2%;
+}
+header > article {
+  padding-bottom: 1rem;
+  background-color: rgba(0,0,0,0.5);
+}
+
+/* 1er article */
+h2 {
+  margin: 2rem;
+}
+main > section > article:first-child {
+  gap: 2rem;
+  justify-content: space-between;
+}
+
+/* bandeau vert */
+main > section:nth-child(2) {
+  background-color: lightgreen;
+}
+#absolute {
+  position: absolute;
+  bottom: -25%;
+  left: 0%;
+}
+/* ombre portée du tigre */
+#absolute > img {
+  filter: drop-shadow(1.5rem 1rem 0.5rem #625f63);
+}
+.section2 {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: center;
+  padding: 1rem 0 1rem 0;
+}
+#marginL {
+  margin-left: auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  flex-direction: column;
+  align-items: center;
+}
+/* bouton 'devenir membre' */
+.memberButton {
+  background-color: #3185fc;
+  width: 35%;
+  padding: 1rem;
+  border: solid white 1px;
+  border-radius: 100vmax;
+  color: white;
+  filter: drop-shadow(0.3rem 0.3rem 0.4rem #625f63);
+  font-size: large;
+}
+
+/* Le diaporama */
+.blackRectangle {
+  height: 2%;
+  background-color: black;
+  z-index: 20;
+}
+#rectangleTop {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+}
+.bottom {
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
+  width: 100%;
+}
+article.bottom.flexBox {
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  color: white;
+  font-size: large;
+}
+article.bottom.flexBox>h2{
+  width: 50%;
+}
+#buttonDiaporama {
+  background-color: black;
+  color: white;
+  border: solid white 1px;
+  border-radius: 100vmax;
+  padding: 1.5rem;
+  width: 30%;
+  font-size: large;
+}
+#bandeauDiapo {
+  background-color: rgba(255, 255, 255, 0.4);
+  height: 20%;
+  z-index: 30;
+}
+
+/* footer */
+footer {
+  background-color: #706c61;
+}
+footer > div {
+  padding: 2rem;
+  align-items: center;
+  justify-content: space-between;
+}
+/* liste des mentions légales et tout */
+ul.w15 {
+  list-style: none;
+  color: white;
+}
+/* navbar des RS */
+ul.w50.flexBox {
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  list-style: none;
+  margin: auto;
+}
+
+/* classe techniques */
+.w15 {
+  width: 15%;
+}
+.w30 {
+  width: 30%;
+}
+.w40 {
+  width: 40%;
+}
+.w50 {
+  width: 50%;
+}
+.w80 {
+  width: 80%;
+  margin: auto;
+}
+.image100 {
+  width: 100%;
+}
+.flexBox {
+  display: flex;
+}
+.relativePosition {
+  position: relative;
+}
+.marginTop {
+  margin-top: 6rem;
+}
